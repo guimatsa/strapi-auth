@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medicaments",
+  "info": {
+    "singularName": "medicament",
+    "pluralName": "medicaments",
+    "displayName": "medicament",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "dosage": {
+      "type": "string",
+      "required": false
+    },
+    "forme": {
+      "type": "enumeration",
+      "enum": [
+        "comprimé",
+        "sirop",
+        "injection",
+        "autre"
+      ]
+    },
+    "frequence": {
+      "type": "enumeration",
+      "enum": [
+        "une_fois_par_jour",
+        "deux_fois_par_jour",
+        "trois_fois_par_jour",
+        "autre"
+      ],
+      "default": "une_fois_par_jour"
+    },
+    "instruction": {
+      "type": "text"
+    },
+    "date_debut": {
+      "type": "datetime"
+    },
+    "medecin_prescripteur": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "medicament"
+    },
+    "user_id": {
+      "type": "string"
+    }
+  }
+}

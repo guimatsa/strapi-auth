@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rappels",
+  "info": {
+    "singularName": "rappel",
+    "pluralName": "rappels",
+    "displayName": "rappel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "id_medicament": {
+      "type": "string"
+    },
+    "heure": {
+      "type": "time"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "recurence": {
+      "type": "string"
+    }
+  }
+}

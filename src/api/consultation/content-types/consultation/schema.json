@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consultations",
+  "info": {
+    "singularName": "consultation",
+    "pluralName": "consultations",
+    "displayName": "consultation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dateAjout": {
+      "type": "date"
+    },
+    "medecinId": {
+      "type": "string"
+    },
+    "patientId": {
+      "type": "string"
+    }
+  }
+}

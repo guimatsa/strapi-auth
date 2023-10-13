@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "antecedants",
+  "info": {
+    "singularName": "antecedant",
+    "pluralName": "antecedants",
+    "displayName": "antecedant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "groupe_sanguin": {
+      "type": "string"
+    },
+    "poids": {
+      "type": "string"
+    },
+    "autre": {
+      "type": "string"
+    },
+    "dossier_medical": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "taille": {
+      "type": "integer"
+    }
+  }
+}
